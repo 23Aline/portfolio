@@ -146,6 +146,115 @@ nav ul li a:hover {
     color: #000000;
 }
 
+.conquintas-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.conquista {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.conquistas {
+    background-color: #f5f5f5; 
+    border-radius: 12px;
+    padding: 15px;
+    width: 200px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.conquistas:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.conquistas .icon {
+    width: 110px; 
+    height: 100px;
+    margin-bottom: 10px; 
+}
+
+.conquistas .icon2 {
+    width: 150px; 
+    height: 100px;
+    margin-bottom: 10px; 
+}
+
+.conquistas span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/*MODAL*/
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#caption {
+    text-align: center;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.img-container::after {
+    content: "Visualizar";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img-container:hover::after {
+    opacity: 1;
+}
+
 /*PROJETOS*/
 #projetos h2 {
     color: #f5f5f5;

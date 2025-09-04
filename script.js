@@ -50,3 +50,20 @@ particlesJS("particles-container", {
     },
     "retina_detect": true
 });
+
+const modal = document.getElementById("imgModal");
+const modalImg = document.getElementById("modalImg");
+const captionText = document.getElementById("caption");
+const span = document.getElementsByClassName("close")[0];
+
+document.querySelectorAll(".conquistas img").forEach(img => {
+    img.addEventListener("click", function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    });
+});
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
