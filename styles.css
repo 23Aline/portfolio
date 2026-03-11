@@ -89,7 +89,7 @@ nav ul li a:hover {
 
 /*SOBRE MIM*/
 #sobre {
-    padding: 75px 30px;
+    padding: 75px 90px;
     color: white;
 }
 
@@ -305,14 +305,29 @@ nav ul li a:hover {
 
 .proje a {
     margin-top: 10px;
-    color: #5c2165;
+    background: linear-gradient(135deg, #5c2165, #ad4949);
+    color: white;
+    padding: 5px 12px;
+    margin: 4px;
+    border-radius: 20px;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 19px;
+    font-size: 15px;
+    transition: transform 0.2s ease; 
 }
 
 .proje a:hover {
-    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.tag{
+    display: inline-block;
+    background: linear-gradient(135deg, #5c2165, #ad4949);
+    color: white;
+    padding: 5px 12px;
+    margin: 4px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 /*CONTATO*/
