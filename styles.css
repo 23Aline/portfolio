@@ -42,14 +42,18 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
+    background: linear-gradient(135deg, #5c2165, #ad4949);
     color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 18px;
     font-weight: 600;
-    font-size: 22px;
-    transition: color 0.3s ease;
+    transition: transform 0.2s ease;
+    display: inline-block;
 }
 
 nav ul li a:hover {
-    color: #f5f5f5; /
+    transform: scale(1.1);
 }
 
 #home {
@@ -64,27 +68,35 @@ nav ul li a:hover {
 }
 
 .texto-home {
-    margin-top: 100px;
+    margin-top: 140px;
     flex: 1;
     max-width: 45%;
     color: white;
-    font-size: 30px;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.texto-home h2 {
+    margin: 7px 0;
 }
 
 .texto-home span {
-    color: #f5f5f5;
+ color: white;
 }
 
 .foto img {
     width: 270px;
-    height: 270px ;   
-    position: relative;
+    height: 270px;
     border-radius: 50%;
-    z-index: 2;
+    object-fit: cover;
     display: block;
-    object-fit: cover; 
     transform: translateY(60px);
     margin-right: 80px;
+    background:
+        linear-gradient(#000, #000) padding-box,
+        linear-gradient(135deg, #5c2165, #ad4949) border-box;
+
+    border: 5px solid transparent;
 }
 
 /*SOBRE MIM*/
